@@ -216,7 +216,16 @@ aside {
             font-size:2vw;
             color:#000;
         }
-
+        &.on {
+            $top:80%;
+            top:$top;
+            left:unset;
+            transform:unset;
+            right:10%;
+            &:hover {
+                top:$top;
+            }
+        }
         &:hover {
             top:20%;
             width:6vw;

@@ -69,6 +69,7 @@ Cube(cube[2],'cube',[
                 const coverHeader = document.querySelector('#cover-header');
                 const mainNav = document.querySelector('#main-nav');
                 const mainSection = document.querySelector('#main-section');
+                const github = document.querySelector('.github');
 
                 function clickEvent (condition) {
                     const scroll_b = document.querySelectorAll('.scroll-b');
@@ -78,6 +79,7 @@ Cube(cube[2],'cube',[
                     if(condition == 'home') {
                         coverHeader.classList.remove('on');
                         subNav.classList.remove('on');
+                        github.classList.remove('on');
 
                         for (i = 0; i < param.length; i++) {
                             mainSection.children[i].classList.remove('on');
@@ -89,6 +91,7 @@ Cube(cube[2],'cube',[
                     for (i = 0; i < param.length; i++) {
                         mainSection.children[i].classList.remove('on');
                         subNav_a[i].parentNode.classList.remove('on');
+                        github.classList.add('on');
                         if (this.dataset.name === mainSection.children[i].classList[0]) {
                             mainSection.children[i].classList.add('on');
                             scroll_b[i].classList.add('y');
@@ -129,7 +132,6 @@ Cube(cube[2],'cube',[
                         // main-section article
                         createEl('article', mainSection, param[i].title);
                     }
-
                 }
 
                 //subNav

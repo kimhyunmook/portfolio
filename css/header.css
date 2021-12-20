@@ -158,6 +158,13 @@ aside .github {
     transition: .5s;
     font-size: 2vw;
     color: #000; }
+  aside .github.on {
+    top: 80%;
+    left: unset;
+    transform: unset;
+    right: 10%; }
+    aside .github.on:hover {
+      top: 80%; }
   aside .github:hover {
     top: 20%;
     width: 6vw;
