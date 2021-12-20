@@ -190,9 +190,45 @@ b {
                     transition:.5s;
                 }
                 
-                
             }
         }
+    }
+}
+
+aside {
+    .github {
+        position:fixed;
+        top:23%;
+        left:50%;
+        transform:translateX(-50%);
+        z-index:999;
+        background:#fff;
+        width: 3vw;
+        height:3vw;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border:1px solid #000;
+        transition:.5s;
+        i {
+            transition:.5s;
+            font-size:2vw;
+            color:#000;
+        }
+
+        &:hover {
+            top:20%;
+            width:6vw;
+            height:6vw;
+            background:#000;
+            // border:5px solid;
+            i {
+                font-size:4vw;
+                color:#fff;
+            }
+        }
+        
     }
 }
 

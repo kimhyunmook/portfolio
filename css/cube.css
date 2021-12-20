@@ -1,7 +1,7 @@
 .cube {
   z-index: -1; }
   .cube:nth-of-type(1) {
-    top: 20%;
+    top: 25%;
     left: 3%; }
     .cube:nth-of-type(1).circle {
       width: 25vw;
