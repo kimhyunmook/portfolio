@@ -152,24 +152,56 @@ aside .github {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000;
+  box-shadow: 2px 2px 5px #aca9a9;
   transition: .5s; }
   aside .github i {
     transition: .5s;
     font-size: 2vw;
     color: #000; }
+  aside .github::after {
+    content: "github";
+    display: block;
+    background: #000;
+    position: absolute;
+    right: -3vw;
+    opacity: 0;
+    padding: .5vw;
+    border-radius: 10px;
+    font-size: 1vw;
+    color: #fff;
+    text-align: center; }
   aside .github.on {
     top: 80%;
+    width: 4vw;
+    height: 4vw;
     left: unset;
     transform: unset;
     right: 10%; }
+    aside .github.on::after {
+      content: "github";
+      display: block;
+      background: #000;
+      position: absolute;
+      padding: .5vw;
+      top: -3vw;
+      border-radius: 10px;
+      font-size: 1vw;
+      color: #fff;
+      text-align: center; }
     aside .github.on:hover {
       top: 80%; }
+      aside .github.on:hover::after {
+        right: unset;
+        top: -1vw;
+        opacity: 1; }
   aside .github:hover {
     top: 20%;
     width: 6vw;
     height: 6vw;
     background: #000; }
+    aside .github:hover::after {
+      transition: .3s;
+      opacity: 1; }
     aside .github:hover i {
       font-size: 4vw;
       color: #fff; }
