@@ -1,0 +1,29 @@
+[
+    {
+        "icon": "fas fa-user",
+        "title": "Information"
+    },
+    {
+        "icon": "fab fa-html5",
+        "title": "HTML5"
+    },
+   
+    {
+        "icon": "fab fa-js-square",
+        "title":"Javascript"
+    },
+    {
+        "icon": "fab fa-node-js",
+        "title": "Node-js"
+    },
+    {
+        "icon": "fab fa-php",
+        "title":"PHP"
+    },
+    {
+        "icon": "far fa-folder-open",
+        "title":"etc",
+        "href":"./danji"
+    }
+
+]

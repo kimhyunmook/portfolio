@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll_fixed</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/cube.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+    <ul class="myslide">
+        <li>
+            안녕하세요
+        </li>
+        <li>
+            슬라이드
+        </li>
+        <li>
+            기능
+        </li>
+        <li>
+            테스트
+        </li>
+        <li>
+            입니다.
+        </li>
+    </ul>
+
+    <script src="./js/myslide.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        const slide = document.querySelector('.myslide');
+        myslide({
+            target: slide,
+            type: 'scroll_fixed',
+            transition: 1000,
+            pageScrollHeight: 400,
+            control: true,
+            // dot: true,
+            // dottype: 'img'
+        })
+    </script>
+</body>
+
+</html>
