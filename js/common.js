@@ -185,6 +185,7 @@ Cube(cube[2],'cube',[
                             for (i = 0; i < param.length; i++) {
                                 mainSection.children[i].classList.remove('on');
                             }
+                            github.classList.remove('on');
                             subNav.classList.remove('on');
                             coverHeader.classList.remove('on');
                         });
